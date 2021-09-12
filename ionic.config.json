@@ -1,0 +1,7 @@
+{
+  "name": "Cutiee App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

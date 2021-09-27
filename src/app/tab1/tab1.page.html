@@ -1,17 +1,221 @@
+<ion-content class="About">
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      ABOUT
     </ion-title>
-  </ion-toolbar>
+</ion-toolbar>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">About</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>About Me</ion-card-subtitle>
+      
+      <center>
+      <ion-card-title>"My Bucket List"</ion-card-title></center>
+    </ion-card-header>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-img src="assets/puerto.jpg"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-img src="assets/japan.jpg"></ion-img>
+          </div>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+  
+    <ion-card-content>
+      <ion-text color="secondary"> 
+      <h3>What is a bucket list?</h3> <br>   Simply put, it is a collection of goals, dreams and aspirations that you 
+      would like to accomplish within your lifetime. 
+      The basic meaning of a bucket list is to keep track 
+      of your goals and to take steps to achieving these goals in order to maximize the incredible 
+      experiences in your life.
+    </ion-text>
+  </ion-card-content>
+  </ion-card>
+  
+<!-- List of Input Items -->
+<!-- List of Sliding Items -->
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary"> 
+      <ion-label>Life List:</ion-label>   
+     </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary"> 
+      <ion-label>Dream List:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary"> 
+      <ion-label>Life's Aspiration List:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>My Lifetime Goal:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>Things to Achieve:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>My Life to Do:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>Meaningful Life Goals:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>Things to Conquers:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>Amazing Experiences to be Had:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>The Life plan:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-text color="tertiary">
+      <ion-label>My Life Must Dos:</ion-label>
+    </ion-text>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+</ion-content>
+
 </ion-content>

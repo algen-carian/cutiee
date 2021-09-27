@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      DEVELOPER
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,34 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Developer</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<!-- codes for Avatar, Chips, Image, item, Card -->
+<div class="card-background-page">
+  <ion-card>
+    <ion-item>
+      <ion-avatar class="avatar">
+      <img src="assets/algen.jpg">
+      </ion-avatar>
+    </ion-item>
+      <div class="card-title">Algen Carian</div>
+      </ion-card>
+      </div>
+ 
+    <ion-list>
+      <ion-item *ngFor="let item of [1,1,1,1,1,1]; let i = index">
+        <ion-avatar slot="start">
+          <ion-img src="assets/art.png"></ion-img>
+          </ion-avatar>
+
+          <ion-label>Artist,Developer</ion-label>
+          <ion-chip color="success" outline="true">
+            <ion-label>Just Click</ion-label>
+            <ion-icon name="heart-circle-outline"></ion-icon>
+          </ion-chip>
+      </ion-item>
+    </ion-list>
+
 </ion-content>

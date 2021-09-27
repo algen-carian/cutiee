@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      HOME
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,61 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <div class="card-background-page">
+      <ion-card>
+        <ion-item>
+          <ion-thumbnail class="thumbnail"> 
+          <img src="assets/beautiful.jpg">
+          </ion-thumbnail>
+            </ion-item>
+            <div class="card-title">Good Places to go</div>
+         </ion-card>
+      </div>
+
+    
+    <ion-item>
+      <ion-thumbnail slot="start">
+      </ion-thumbnail>
+      <ion-label>Some Enteresting Bucket List<ion-icon name="flag-outline"></ion-icon></ion-label>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/italy.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Bucket List Destination</h3>
+        <p>Good place located at the Italy<ion-icon name="pin-sharp"></ion-icon></p>
+        <p>1 of Most Beautiful place in the World</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="end">
+        <img src="assets/burger.jpeg">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Best Food Trip in the World</h3>
+        <p>Good place to taste a large Burger<ion-icon name="pin-sharp"></ion-icon></p>
+        <p>Located at the America</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/boracay.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Bucket List Beach Boracay</h3>
+        <p>Good beach Located in the Philippines<ion-icon name="pin-sharp"></ion-icon></p>
+        <p>1 of Most Beautiful Beach Whole World</p>
+      </ion-label>
+    </ion-item>
+    
+        
+
+
 </ion-content>
